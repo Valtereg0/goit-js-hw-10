@@ -19,8 +19,8 @@
 body {
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
+  /* min-width: 100vw; */
+  /* min-height: 100vh; */
   margin: 0;
 }
 
@@ -29,4 +29,250 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.data {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 8px;
+  width: 363px;
+  height: 40px;
+  margin-bottom: 32px;
+  margin-left: 150px;
+}
+
+.input-data {
+  border-radius: 4px;
+  width: 280px;
+  height: 40px;
+  background: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border-color: #808080;
+  padding-left: 16px;
+}
+
+.input-data:hover {
+  border-color: #000;
+}
+
+.input-data:active {
+  border-color: #4e75ff;
+}
+
+.input-data:disabled {
+  border-color: #808080;
+  color: #808080;
+  background: #fafafa;
+}
+
+button[data-start] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  border: none;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button[data-start]:hover {
+  background: #6c8cff;
+  transition: cubic-bezier(0.4, 0, 0.2, 3) ease;
+}
+
+button[data-start]:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  opacity: 0.7;
+}
+
+.timer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
+  width: 346px;
+  height: 72px;
+  margin-left: 150px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0px;
+  max-width: 100%;
+  height: 72px;
+}
+
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  text-transform: uppercase;
+}
+
+span[data-days] {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+span[data-hours] {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+span[data-minutes] {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+span[data-seconds] {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  gap: 16px;
+  margin: auto;
+}
+
+.label-delay {
+}
+
+.delay-input {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  width: 340px;
+  height: 32px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding-left: 16px;
+}
+
+.delay-input:active {
+  border-color: #4e75ff;
+}
+
+.delay-input:hover {
+  border-color: #000;
+}
+
+.form-state {
+  width: 360px;
+  height: 50px;
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 48px;
+}
+
+.form-state:hover {
+  border-width: 1px;
+  border-color: #000;
+}
+
+legend {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label-radio {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+.input-radio {
+  border: 1px solid #757575;
+  border-radius: 14px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.form-btn:hover {
+  background: #6c8cff;
+  transition: cubic-bezier(0.4, 0, 0.2, 3) ease;
 }
